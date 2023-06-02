@@ -256,6 +256,13 @@
     background-size: cover;
 }
 
+/*** Table ***/
+.table-image {
+    td, th {
+      vertical-align: middle;
+      text-align: center;
+    }
+}
 
 /*** Team ***/
 .team-text {
