@@ -113,6 +113,7 @@
     .navbar .nav-item .dropdown-menu {
         display: block;
         border: none;
+        font-family: "Montserrat";
         margin-top: 0;
         top: 150%;
         right: 0;
