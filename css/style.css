@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FDA12B;
+    --primary: #FF2222;
     --secondary: #8D9297;
     --light: #F8F9FA;
     --dark: #182333;
@@ -221,7 +221,6 @@
 }
 
 
-
 /*** Service ***/
 .service-text::before {
     position: absolute;
@@ -250,14 +249,6 @@
     color: #FFFFFF !important;
 }
 
-.services .service-item {
-    border: 1px solid #f3d7ff;
-    border-radius: 23px;
-    padding: 30px;
-    background-color: #fff;
-    margin-bottom: 30px;
-    transition: all .4s;
-}
 
 /*** Appointment ***/
 .appointment {
@@ -266,12 +257,7 @@
 }
 
 /*** Table ***/
-.table-image {
-    td, th {
-      vertical-align: middle;
-      text-align: center;
-    }
-}
+
 
 /*** Team ***/
 .team-text {
