@@ -228,25 +228,31 @@
     width: 100%;
     height: 0;
     top: 0;
+    /* display: none; */
     left: 0;
     background: var(--primary);
     opacity: 0;
     transition: .5s;
+    /* display: none; */
 }
 
 .service-item:hover .service-text::before {
     height: 100%;
-    opacity: 1;
+    opacity:0.5;
+
 }
 
 .service-text * {
     position: relative;
     transition: .5s;
     z-index: 1;
+
 }
 
 .service-item:hover .service-text * {
     color: #FFFFFF !important;
+    /* display: contents; */
+
 }
 
 
@@ -257,6 +263,29 @@
 }
 
 /*** Table ***/
+
+/*** title ***/
+.title{
+        vertical-align: middle;
+        text-align: center;
+        color: #182333;
+        font-size: large;
+        font-weight: bolder;
+
+        
+}
+.detail{
+        vertical-align: middle;
+        text-align: center;
+        color: #182333;
+        font-size: medium;
+        /* font-weight: 300; */
+        
+}
+/* .middle{
+    vertical-align: middle !important;
+    text-align: center !important;
+} */
 
 
 /*** Team ***/
