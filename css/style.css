@@ -220,6 +220,63 @@
     color: var(--primary) !important;
 }
 
+/*About Us*/
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.business-container{
+    text-align: center;
+    width: 1200px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.inner-container{
+    display: flex;
+    align-items: center;
+}
+
+.desc-container{
+    width: 50%;
+    font-family: "Montserrat";
+}
+
+.sub-title{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
+
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    font-family: "Montserrat";
+}
+
+.card{
+    width: 220px;
+    height: 170px;
+    background-color: rgb(225, 225, 225);
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: #8D9297;
+}
 
 /*** Service ***/
 .service-item {
@@ -406,3 +463,41 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+.current {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .year-btn {
+    display: block;
+    background-color: #e6e6e6;
+    border: none;
+    color: #333;
+    padding: 8px;
+    margin-bottom: 4px;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30;
+    font-weight: bold;
+  }
+  
+  .year-btn:hover .month-list {
+    display: block;
+  }
+  
+  .month-list {
+    display: none;
+    background-color: #e6e6e6;
+    padding: 8px;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  .month-item {
+    margin-bottom: 4px;
+  }
