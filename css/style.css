@@ -222,37 +222,55 @@
 
 
 /*** Service ***/
-.service-text::before {
+.service-item {
+    position: relative;
+    z-index: 1;
+}
+
+.service-text::after {
     position: absolute;
     content: "";
     width: 100%;
     height: 0;
     top: 0;
-    /* display: none; */
     left: 0;
     background: var(--primary);
     opacity: 0;
     transition: .5s;
-    /* display: none; */
+    background-color: #D8DAE7;
 }
 
-.service-item:hover .service-text::before {
+.service-item:hover .service-text::after {
     height: 100%;
     opacity:0.5;
 
 }
 
+.service-item .service-text {
+    display: none;
+    
+}
+.service-item:hover .service-text {
+    top: 0;
+    display: block;
+}
 .service-text * {
-    position: relative;
+    /* position: relative; */
     transition: .5s;
-    z-index: 1;
+    vertical-align: middle;
 
 }
 
 .service-item:hover .service-text * {
-    color: #FFFFFF !important;
-    /* display: contents; */
+    color: black!important;
+    vertical-align: middle;
+    font-weight: 800;
 
+}
+
+.middle{
+    text-align: center;
+    vertical-align: middle;
 }
 
 
