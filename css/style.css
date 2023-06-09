@@ -220,6 +220,63 @@
     color: var(--primary) !important;
 }
 
+/*About Us*/
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.business-container{
+    text-align: center;
+    width: 1200px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.inner-container{
+    display: flex;
+    align-items: center;
+}
+
+.desc-container{
+    width: 50%;
+    font-family: "Montserrat";
+}
+
+.sub-title{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
+
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    font-family: "Montserrat";
+}
+
+.card{
+    width: 220px;
+    height: 170px;
+    background-color: rgb(225, 225, 225);
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: #8D9297;
+}
 
 /*** Service ***/
 .service-item {
