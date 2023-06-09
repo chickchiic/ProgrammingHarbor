@@ -245,7 +245,8 @@
 
 .sub-title{
     font-size: 15px;
-    font-weight: 900;
+    font-weight: bolder;
+    font-weight: ;
     margin: 0px 20px 20px 20px;
     text-align: justify;
     width: 500px;
@@ -253,7 +254,7 @@
 
 .description{
     font-size: 15px;
-    font-weight: 100;
+    font-weight: lighter;
     margin: 0px 20px 20px 20px;
     text-align: justify;
     width: 500px;
@@ -276,6 +277,17 @@
     padding: 8px;
     border-radius: 20px;
     box-shadow: #8D9297;
+}
+.card-product{
+    width: 220px;
+    height: 370px;
+    /* background-color:   rgb(225, 225, 225); */
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    /* border-color: black; */
+    box-shadow: #8D9297;
+    border: 1px solid rgba(0,0,0,0.125);
 }
 
 /*** Service ***/
