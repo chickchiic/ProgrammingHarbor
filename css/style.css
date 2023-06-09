@@ -245,7 +245,7 @@
 
 .sub-title{
     font-size: 15px;
-    font-weight: bolder;
+    font-weight: 900;
     margin: 0px 20px 20px 20px;
     text-align: justify;
     width: 500px;
@@ -253,7 +253,7 @@
 
 .description{
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 100;
     margin: 0px 20px 20px 20px;
     text-align: justify;
     width: 500px;
