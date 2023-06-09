@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FDA12B;
+    --primary: #FF2222;
     --secondary: #8D9297;
     --light: #F8F9FA;
     --dark: #182333;
@@ -220,9 +220,71 @@
     color: var(--primary) !important;
 }
 
+/*About Us*/
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.business-container{
+    text-align: center;
+    width: 1200px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.inner-container{
+    display: flex;
+    align-items: center;
+}
+
+.desc-container{
+    width: 50%;
+    font-family: "Montserrat";
+}
+
+.sub-title{
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
+
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    font-family: "Montserrat";
+}
+
+.card{
+    width: 220px;
+    height: 170px;
+    background-color: rgb(225, 225, 225);
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: #8D9297;
+}
 
 /*** Service ***/
-.service-text::before {
+.service-item {
+    position: relative;
+    z-index: 1;
+}
+
+.service-text::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -232,21 +294,40 @@
     background: var(--primary);
     opacity: 0;
     transition: .5s;
+    background-color: #D8DAE7;
 }
 
-.service-item:hover .service-text::before {
+.service-item:hover .service-text::after {
     height: 100%;
-    opacity: 1;
+    opacity:0.5;
+
 }
 
+.service-item .service-text {
+    display: none;
+    
+}
+.service-item:hover .service-text {
+    top: 0;
+    display: block;
+}
 .service-text * {
-    position: relative;
+    /* position: relative; */
     transition: .5s;
-    z-index: 1;
+    vertical-align: middle;
+
 }
 
 .service-item:hover .service-text * {
-    color: #FFFFFF !important;
+    color: black!important;
+    vertical-align: middle;
+    font-weight: 800;
+
+}
+
+.middle{
+    text-align: center;
+    vertical-align: middle;
 }
 
 
@@ -255,6 +336,31 @@
     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-2.jpg) center center no-repeat;
     background-size: cover;
 }
+
+/*** Table ***/
+
+/*** title ***/
+.title{
+        vertical-align: middle;
+        text-align: center;
+        color: #182333;
+        font-size: large;
+        font-weight: bolder;
+
+        
+}
+.detail{
+        vertical-align: middle;
+        text-align: center;
+        color: #182333;
+        font-size: medium;
+        /* font-weight: 300; */
+        
+}
+/* .middle{
+    vertical-align: middle !important;
+    text-align: center !important;
+} */
 
 
 /*** Team ***/
@@ -332,7 +438,7 @@
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Montserrat";
     font-weight: 900;
     color: #999999;
     margin-right: 10px;
@@ -358,96 +464,3 @@
     color: var(--primary);
 }
 
-/*** News ***/
-body,
-p {
-    font-family: "Open Sans", sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased !important;
-    line-height: 26px;
-    font-size: 15px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #212121;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased !important;
-    }
-
-h1 {
-    font-size: 36px;
-    line-height: 48px;
-}
-
-h2 {
-    font-size: 28px;
-    line-height: 36px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
-h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: -.5px;
-}
-
-h4 {
-    font-size: 18px;
-    line-height: 28px;
-    text-transform: uppercase;
-    letter-spacing: -.2px;
-}
-
-h5 {
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.alert .icon {
-    margin-right: 15px;
-}
-
-.post {
-    border-bottom: 1px solid #dadada;
-    padding: 0 0 30px;
-    margin: 0 0 45px;
-}
-
-.post.last {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border-bottom: 0;
-}
-
-.post-body {
-    padding: 20px 0;
-}
-
-.entry-header .entry-title {
-    font-size: 24px;
-    margin: 5px 0 15px;
-    position: relative;
-    line-height: 34px;
-    text-transform: capitalize;
-}
-
-.entry-header .entry-title a {
-    color: #303030;
-}
-
-.entry-header .entry-title a:hover {
-    color: #ffb600;
-}
-
-.post-single .entry-header .entry-title {
-    font-size: 28px;
-}
