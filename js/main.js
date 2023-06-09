@@ -57,3 +57,14 @@
     
 })(jQuery);
 
+const yearBtns = document.querySelectorAll('.year-btn');
+
+yearBtns.forEach((btn) => {
+  btn.addEventListener('mouseenter', () => {
+    btn.querySelector('.month-list').style.display = 'block';
+  });
+
+  btn.addEventListener('mouseleave', () => {
+    btn.querySelector('.month-list').style.display = 'none';
+  });
+});

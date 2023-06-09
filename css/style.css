@@ -463,3 +463,41 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+.current {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .year-btn {
+    display: block;
+    background-color: #e6e6e6;
+    border: none;
+    color: #333;
+    padding: 8px;
+    margin-bottom: 4px;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30;
+    font-weight: bold;
+  }
+  
+  .year-btn:hover .month-list {
+    display: block;
+  }
+  
+  .month-list {
+    display: none;
+    background-color: #e6e6e6;
+    padding: 8px;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  .month-item {
+    margin-bottom: 4px;
+  }
