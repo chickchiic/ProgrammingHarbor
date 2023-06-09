@@ -246,6 +246,7 @@
     font-size: 15px;
     font-weight: bolder;
     font-weight: 700;
+    margin: 0px 20px 20px 20px;
     padding: 20px;
     text-align: justify;
     width: 500px;
@@ -309,13 +310,14 @@
     left: 0;
     background: var(--primary);
     opacity: 0;
-    transition: .5s;
-    background-color: #D8DAE7;
+    transition: 2s ease-in-out;
+    background-image:linear-gradient(180deg, #616B9F, #A4A4A4)
 }
 
 .service-item:hover .service-text::after {
     height: 100%;
-    opacity:0.5;
+    opacity:0.6;
+    transition: ease-in-out 2s;
 
 }
 
@@ -335,7 +337,7 @@
 }
 
 .service-item:hover .service-text * {
-    color: black!important;
+    color: rgb(255, 255, 255)!important;
     vertical-align: middle;
     font-weight: 800;
 
@@ -480,3 +482,40 @@
     color: var(--primary);
 }
 
+.current {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .year-btn {
+    display: block;
+    background-color: #e6e6e6;
+    border: none;
+    color: #333;
+    padding: 8px;
+    margin-bottom: 4px;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30;
+    font-weight: bold;
+  }
+  
+  .year-btn:hover .month-list {
+    display: block;
+  }
+  
+  .month-list {
+    display: none;
+    background-color: #e6e6e6;
+    padding: 8px;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  .month-item {
+    margin-bottom: 4px;
+  }
