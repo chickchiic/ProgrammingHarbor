@@ -247,11 +247,16 @@
     font-size: 15px;
     font-weight: bolder;
     margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
 }
 
 .description{
     font-size: 15px;
     font-weight: lighter;
+    margin: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 500px;
 
 }
 
