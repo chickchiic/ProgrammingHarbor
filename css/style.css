@@ -65,7 +65,13 @@
     justify-content: center;
     font-weight: normal;
 }
+.collapse.show {
+    display: block;
+}
 
+.collapse {
+    display: none;
+}
 
 /*** Navbar ***/
 .navbar.sticky-top {
@@ -275,8 +281,19 @@
     background-color: rgb(225, 225, 225);
     margin: 10px;
     padding: 8px;
-    border-radius: 20px;
+    border-radius: 20px; 
     box-shadow: #8D9297;
+}
+.card-faq{
+    width: 80%;
+    height: 100%px;
+    /* background-color:   rgb(225, 225, 225); */
+    margin: 50px;
+    padding: 8px;
+    border-radius: 20px;
+    /* border-color: black; */
+    box-shadow: #8D9297;
+    border: 1px solid rgba(0,0,0,0.125);
 }
 
 /*** Service ***/
