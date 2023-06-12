@@ -694,3 +694,29 @@
     color: var(--primary);
 }
 
+
+/*** Productpage comparison chart ***/
+.card-product-compare{
+    width: 220px;
+    height: 370px;
+    /* background-color:   rgb(225, 225, 225); */
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    /* border-color: black; */
+    box-shadow: #8D9297;
+    
+}
+.card-text-compare-red{
+    color: #FF1717;
+    text-align: center;
+    padding:20px 0px;
+    white-space: nowrap;
+}
+.card-text-compare-blue{
+    color: #000580;
+    text-align: center;
+    padding:20px 0px;
+    white-space: nowrap;
+}
+
