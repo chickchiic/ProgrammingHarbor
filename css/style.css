@@ -14,7 +14,6 @@
     z-index: 99;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -234,7 +233,7 @@
 
 .business-container{
     text-align: center;
-    width: 1200px;
+    width: 1300px;
     font-family: sans-serif;
     padding: 20px;
 }
