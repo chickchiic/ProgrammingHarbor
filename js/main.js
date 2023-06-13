@@ -85,4 +85,30 @@ function selectButton(button) {
     button.classList.add("selected");
     
   }
+  function filterByYear(button) {
+    var yearButtons = document.getElementsByClassName('year-btn');
+    for (var i = 0; i < yearButtons.length; i++) {
+      yearButtons[i].classList.remove('active');
+    }
+    button.classList.add('active');
+    
+    var selectedYear = button.getAttribute('data-year');
+    
+    var newsItems = document.getElementsByClassName('news-item');
+    for (var i = 0; i < newsItems.length; i++) {
+      var newsYear = newsItems[i].getAttribute('data-year');
+      
+      if (selectedYear === 'latest') {
+        if (newsYear === '2020' || newsYear === '2021') {
+          newsItems[i].style.display = 'none';
+        } else {
+          newsItems[i].style.display = 'block';
+        }
+      } else if (newsYear === selectedYear) {
+        newsItems[i].style.display = 'block';
+      } else {
+        newsItems[i].style.display = 'none';
+      }
+    }
+  }
   

@@ -857,3 +857,10 @@
     height: 310px; /* Adjust the height as per your requirement */
     object-fit: cover;
   }
+  .year-btn:hover,
+.year-btn.selected,
+.latest-btn:hover,
+.latest-btn.selected {
+  background-color: red;
+  color: white;
+}
