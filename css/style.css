@@ -1,4 +1,37 @@
 /********** Template CSS **********/
+@import ;
+
+    
+    .content{
+        position: relative
+        ;width: 90%;
+        max-width: 400px
+        ;margin: auto
+        ;overflow: hidden
+    }
+    .content .content-overlay{
+        background: rgba(0,0,0,0.7);
+        position: absolute
+        ;height: 99%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s
+    }
+        .content:hover .content-overlay{
+            opacity: 1
+        }.content-image{width: 100%}
+        .content-details{position: absolute;text-align: center;padding-left: 1em;padding-right: 1em;width: 100%;top: 50%;left: 50%;opacity: 0;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);-webkit-transition: all 0.3s ease-in-out 0s;-moz-transition: all 0.3s ease-in-out 0s;transition: all 0.3s ease-in-out 0s}
+        .content:hover .content-details{top: 50%;left: 50%;opacity: 1}
+        .content-details h3{color: #fff;font-weight: 500;letter-spacing: 0.15em;margin-bottom: 0.5em;text-transform: uppercase}
+        .content-details p{color: #fff;font-size: 0.8em}
+        /* .fadeIn-bottom{top: 80%} */
+/* test */
 :root {
     --primary: #FF2222;
     --secondary: #8D9297;
@@ -369,6 +402,7 @@
     margin: 10px;
     vertical-align: top;
     border-radius: 20px; 
+    border: 1px solid gray;
     box-shadow: #8D9297;
 }
 
@@ -407,7 +441,8 @@
     z-index: 1;
 }
 
-.service-text::after {
+
+ /* .service-text::after { 
     position: absolute;
     content: "";
     width: 100%;
@@ -418,12 +453,26 @@
     opacity: 0;
     transition: 2s ease-in-out;
     background-image:linear-gradient(180deg, #616B9F, #A4A4A4)
+} */
+
+ .service-text::after { 
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: var(--primary);
+    opacity: 0;
+    transition: 2s ease-in-out;
+    background-image:linear-gradient(180deg, #616B9F, #A4A4A4)
+
 }
 
 .service-item:hover .service-text::after {
     height: 100%;
     opacity:0.6;
-    transition: ease-in-out 2s;
+    transition: ease-in-out 3s;
 
 }
 
@@ -434,21 +483,20 @@
 .service-item:hover .service-text {
     top: 0;
     display: block;
+
 }
 .service-text * {
-    /* position: relative; */
     transition: .5s;
     vertical-align: middle;
 
 }
-.service-item:hover .service-text {
+
+.service-item:hover .service-text * {
     color: black;
     vertical-align: middle;
     font-weight: 800;
 
-}
-   
-
+} */
 
 .middle{
     text-align: center;
@@ -469,17 +517,16 @@
         vertical-align: middle;
         text-align: center;
         color: #182333;
-        font-size: 28px;
-        font-weight:900;
+        font-size: large;
+        font-weight: bolder;
 
         
 }
 .detail{
         vertical-align: middle;
         text-align: center;
-        color: #909090;
-        font-size: 15px;
-        font-weight:20;
+        color: #182333;
+        font-size: medium;
         /* font-weight: 300; */
         
 }
@@ -716,90 +763,16 @@
     color: var(--primary);
 }
 
-.current {
-    position: fixed;
-    left: 0;
-    top: 100;
-    transform: translateY(-50%);
-  }
-  
-  .year-btn {
-    display: block;
-    background-color: #e6e6e600;
-    border: none;
-    color: #333;
-    padding: 8px;
-    margin-bottom: 0px;
-    width: 120px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 30;
-    font-weight: bold;
-
-  }
-  
-  .year-btn:hover .month-list {
-    display: block;
-  }
-  
-  .month-list {
-    display: none;
-    background-color: #e6e6e600;
-    padding: 8px;
-    list-style-type: none;
-    font-weight: normal;
-    font-size: 16px;
-  }
-  
-  .month-item {
-    margin-bottom: 4px;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-btn {
-    background-color: #f1f1f1;
-    color: black;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-  }
-  
-  .dropdown-content label {
-    display: block;
-  }
-  
-  .dropdown-content input[type="checkbox"] {
-    margin-right: 5px;
-  }
-  .dropdown {
-  position: relative;
-  display: inline-block;
 /*** Productpage comparison chart ***/
-  }
 .card-product-compare-blue{
     width: 280px;
     height: 1140px;
     /* background-color:   rgb(225, 225, 225); */
     margin: 10px;
     padding: 8px;
-    border:solid rgb (165, 165, 233) 2px;
+    border:solid rgb(165, 165, 233) 2px;
     box-shadow: #8D9297;
     
-
 }
 .card-product-compare-red{
     width: 280px;
@@ -825,36 +798,5 @@
     padding:25px 0px;
     white-space: nowrap;
 }
-.latest-btn{
-    display: block;
-    background-color: #e6e6e600;
-    border: none;
-    color: #333;
-    padding: 8px;
-    margin-bottom: 0px;
-    width: 120px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 30;
-    font-weight: bold;
-
-}
-
-.latest-btn{
-    background-color: #FF1717;
-    color: white;
-}
- 
 
 
-.month-list li:hover a,
-.month-list li.selected a {
-  background-color: red;
-  color: white;
-}
-
-.equal-image {
-    width: 100%;
-    height: 310px; /* Adjust the height as per your requirement */
-    object-fit: cover;
-  }
