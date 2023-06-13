@@ -517,16 +517,17 @@
         vertical-align: middle;
         text-align: center;
         color: #182333;
-        font-size: large;
-        font-weight: bolder;
+        font-size: 35px;
+        font-weight: 900;
 
         
 }
 .detail{
         vertical-align: middle;
         text-align: center;
-        color: #182333;
-        font-size: medium;
+        color: #697179;
+        font-size: 18px;
+        font-weight: 100;
         /* font-weight: 300; */
         
 }
