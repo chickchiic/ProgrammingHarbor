@@ -74,3 +74,15 @@ var dropdownContent = document.querySelector('.dropdown-content');
 dropdownBtn.addEventListener('click', function() {
   dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
+function selectButton(button) {
+    // Remove the "selected" class from all buttons
+    var buttons = document.getElementsByClassName("year-btn");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("selected");
+    }
+  
+    // Add the "selected" class to the clicked button
+    button.classList.add("selected");
+    
+  }
+  
