@@ -469,16 +469,17 @@
         vertical-align: middle;
         text-align: center;
         color: #182333;
-        font-size: large;
-        font-weight: bolder;
+        font-size: 28px;
+        font-weight:900;
 
         
 }
 .detail{
         vertical-align: middle;
         text-align: center;
-        color: #182333;
-        font-size: medium;
+        color: #909090;
+        font-size: 15px;
+        font-weight:20;
         /* font-weight: 300; */
         
 }
